@@ -7,6 +7,10 @@ body {
     font-size: 1.5em;
 }
 
+.font-hashtag {
+    font-family: "Permanent Marker";
+}
+
 .button {
     display: inline-block;
     padding: 10px 20px;
