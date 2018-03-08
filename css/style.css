@@ -1,0 +1,29 @@
+body {
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.font-header {
+    font-family: "Roboto Slab";
+    font-size: 1.5em;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: lightgrey;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+.buttons--disabled {
+    background: darkgrey;
+}
+
+.buttons--red {
+    background: #FF334C;
+}
