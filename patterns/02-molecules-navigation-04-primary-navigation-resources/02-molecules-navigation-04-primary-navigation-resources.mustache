@@ -1,0 +1,12 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<ul class="primaryNav">
+    {{#list}}
+        <li>
+            <a href="{{{link}}}" class="navItem">
+                <i class="material-icons {{{modifier}}} md-36 iconImg">{{icon}}</i>
+                <p class="iconTxt {{selected}} {{textModifier}}">{{description}}</p>
+            </a>
+        </li>
+    {{/list}}
+</ul>
