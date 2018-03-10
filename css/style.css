@@ -19,15 +19,39 @@ body {
     border-radius: 5px;
 }
 
-a {
-    text-decoration: none;
-}
-
 .buttons--ghost {
     background: #ffffff;
     color: #227d96;
     border: 4px solid #227d96;
     padding: 6px 16px;
+}
+
+button.selected {
+    padding: 10px 20px;
+    background-color: #227D96;
+    color: #fff;
+    border-radius: 64px;
+    
+    font-size: 15px;
+    border: none;
+}
+
+button.notSelected {
+    padding: 8px 18px;
+    background-color: #fff;
+    color: #227D96;
+    border-radius: 64px;
+    
+    border: 1px solid #227D96;
+    font-size: 15px;    
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Roboto Slab";
 }
 
 .progressBar {
@@ -69,6 +93,14 @@ a {
   font-size: 90%;
   line-height: 1;
   text-align: center;
+}
+
+#logo {
+    max-height: 100px;
+}
+
+#heroImg {
+    max-width: 50%;
 }
 
 
