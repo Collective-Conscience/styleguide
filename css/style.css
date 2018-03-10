@@ -30,3 +30,7 @@ a {
 .buttons--red {
     background: #FF334C;
 }
+
+.progressBar {
+    max-height: 250px;
+}
