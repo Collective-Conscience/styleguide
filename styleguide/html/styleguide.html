@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     
-    <link rel="stylesheet" href="../../css/style.css?1520722995189" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1520722995189" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1521176485248" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1521176485248" media="all" />
     
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1520722995189" media="all">
+    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1521176485248" media="all">
     <!-- End Pattern Lab -->
   
   </head>
@@ -1033,6 +1033,111 @@
 	{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"atoms","patternSubtype":"Text"},"patternExtension":"mustache","patternName":"Headings","patternPartial":"atoms-headings","patternState":"","patternEngineName":"mustache","extraOutput":{}}
 	</script>
 
+</div><!--end pl-c-pattern--><div id="viewall-molecules-forms" class="pl-c-category">
+		
+	<h2 class="pl-c-category__title">
+		<a href="../../patterns/02-molecules-forms&#x2F;index.html" class="pl-c-category__title-link patternLink" data-patternpartial="viewall-molecules-forms">forms</a>
+	</h2><!--end pl-c-category__title-->
+
+	<div class="pl-c-category__description pl-c-text-passage">
+		
+	</div><!--end pl-c-category__description-->
+	
+</div><!--end pl-c-category-->
+	<div id="molecules-date-picker" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/02-molecules-forms-date-picker&#x2F;02-molecules-forms-date-picker.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="molecules-date-picker" title="Link to Pattern">
+				Date-Picker
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-molecules-date-picker" data-patternpartial="molecules-date-picker" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-molecules-date-picker">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto+Slab:400,700|Roboto:400,400i,700" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<div class="dateTimePicker">
+    <i class="material-icons md-dark md-24 iconImg">event_note</i>
+    <p id="date"></p>
+    <i class="material-icons md-dark md-24 iconImg">create</i>
+</div>
+
+<script>
+var d = new Date();
+document.getElementById("date").innerHTML = d.toDateString();
+</script>
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-molecules-date-picker" class="pl-js-pattern-data">
+	{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>This molecule is part of the report page, and should automatically grab current date at the time of page-load. If the user selects the pencil icon, the user should be given the option to change the date using a date-picker-wheel (not implemented in this style guide).</p>\n","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"forms"},"patternExtension":"mustache","patternName":"Date-Picker","patternPartial":"molecules-date-picker","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+	</script>
+
+</div><!--end pl-c-pattern--><div id="molecules-time-picker" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/02-molecules-forms-time-picker&#x2F;02-molecules-forms-time-picker.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="molecules-time-picker" title="Link to Pattern">
+				Time-Picker
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-molecules-time-picker" data-patternpartial="molecules-time-picker" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-molecules-time-picker">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto+Slab:400,700|Roboto:400,400i,700" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<body onload="timeNow(curTime)">
+    <div class="dateTimePicker">
+        <i class="material-icons md-dark md-24 iconImg">access_time</i>
+        <input id="curTime" type="time" value="10:40"/>
+        <i class="material-icons md-dark md-24 iconImg">create</i>
+    </div>
+</body>
+
+<script>
+    function timeNow(i) {
+      var d = new Date(),
+          h = (d.getHours()<10?'0':'') + d.getHours(),
+          m = (d.getMinutes()<10?'0':'') + d.getMinutes();
+      i.value = h + ':' + m;
+    }
+</script>
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-molecules-time-picker" class="pl-js-pattern-data">
+	{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>This molecule is part of the report page, and should automatically grab current time at the time of page-load. If the user selects the pencil icon, the user should be given the option to change the time using a time-picker-wheel (not implemented in this style guide).</p>\n","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"forms"},"patternExtension":"mustache","patternName":"Time-Picker","patternPartial":"molecules-time-picker","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+	</script>
+
 </div><!--end pl-c-pattern--><div id="viewall-molecules-navigation" class="pl-c-category">
 		
 	<h2 class="pl-c-category__title">
@@ -1319,10 +1424,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1520722995189">
+<script id="pl-js-polyfill-insert-1521176485248">
   (function() {
     if (self != top) {
-      var cb = '1520722995189';
+      var cb = '1521176485248';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -1332,10 +1437,10 @@
   })();
 </script>
 
-<script id="pl-js-insert-1520722995189">
+<script id="pl-js-insert-1521176485248">
   (function() {
     if (self != top) {
-      var cb = '1520722995189';
+      var cb = '1521176485248';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }

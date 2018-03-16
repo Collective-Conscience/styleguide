@@ -15,39 +15,29 @@
   </head>
   <body class="">
     
-<ul class="sg-colors">
-            <li>
-                <span class="sg-swatch" style="background: #64C2DC;"></span>
-                <span class="sg-label">
-                    $color-brand-400 <br />
-                    #64C2DC
-                </span>
-            </li>
-            <li>
-                <span class="sg-swatch" style="background: #3BB2D2;"></span>
-                <span class="sg-label">
-                    $color-brand-main - 500 <br />
-                    #3BB2D2
-                </span>
-            </li>
-            <li>
-                <span class="sg-swatch" style="background: #2994B1;"></span>
-                <span class="sg-label">
-                    $color-brand-700 <br />
-                    #2994B1
-                </span>
-            </li>
-            <li>
-                <span class="sg-swatch" style="background: #227D96;"></span>
-                <span class="sg-label">
-                    $color-brand-900 <br />
-                    #227D96
-                </span>
-            </li>
-</ul>  
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto+Slab:400,700|Roboto:400,400i,700" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<body onload="timeNow(curTime)">
+    <div class="dateTimePicker">
+        <i class="material-icons md-dark md-24 iconImg">access_time</i>
+        <input id="curTime" type="time" value="10:40"/>
+        <i class="material-icons md-dark md-24 iconImg">create</i>
+    </div>
+</body>
+
+<script>
+    function timeNow(i) {
+      var d = new Date(),
+          h = (d.getHours()<10?'0':'') + d.getHours(),
+          m = (d.getMinutes()<10?'0':'') + d.getMinutes();
+      i.value = h + ':' + m;
+    }
+</script>  
   <!--DO NOT REMOVE-->
   <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
-  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"atoms","patternSubtype":"Colors"},"patternExtension":"mustache","patternName":"Brand Colors Blue Variations","patternPartial":"atoms-brand-colors-blue-variations","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>This molecule is part of the report page, and should automatically grab current time at the time of page-load. If the user selects the pencil icon, the user should be given the option to change the time using a time-picker-wheel (not implemented in this style guide).</p>\n","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"forms"},"patternExtension":"mustache","patternName":"Time-Picker","patternPartial":"molecules-time-picker","patternState":"","patternEngineName":"mustache","extraOutput":{}}
 </script>
 
 <script>

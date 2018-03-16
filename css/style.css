@@ -151,6 +151,27 @@ h1, h2, h3, h4 {
     padding-left: 23%;
 }
 
+.dateTimePicker i, .dateTimePicker p, .dateTimePicker input  {
+    display: inline;
+}
+
+.dateTimePicker i {
+    margin-left: 0;
+    vertical-align: middle;
+}
+
+.dateTimePicker p, .dateTimePicker input {
+    font-family: Roboto;
+    font-size: 1em;
+    padding-left: 10px;
+    padding-right: 50px;
+}
+
+.dateTimePicker input {
+    font-family: Roboto;
+}
+
+
 /* ICONS */
 /* Rules for sizing the icon. */
 .material-icons.md-18 { font-size: 18px; }

@@ -1,0 +1,20 @@
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto+Slab:400,700|Roboto:400,400i,700" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<body onload="timeNow(curTime)">
+    <div class="dateTimePicker">
+        <i class="material-icons md-dark md-24 iconImg">access_time</i>
+        <input id="curTime" type="time" value="10:40"/>
+        <i class="material-icons md-dark md-24 iconImg">create</i>
+    </div>
+</body>
+
+<script>
+    function timeNow(i) {
+      var d = new Date(),
+          h = (d.getHours()<10?'0':'') + d.getHours(),
+          m = (d.getMinutes()<10?'0':'') + d.getMinutes();
+      i.value = h + ':' + m;
+    }
+</script>

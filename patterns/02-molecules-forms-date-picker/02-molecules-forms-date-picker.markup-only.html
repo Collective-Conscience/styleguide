@@ -1,0 +1,14 @@
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto+Slab:400,700|Roboto:400,400i,700" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<div class="dateTimePicker">
+    <i class="material-icons md-dark md-24 iconImg">event_note</i>
+    <p id="date"></p>
+    <i class="material-icons md-dark md-24 iconImg">create</i>
+</div>
+
+<script>
+var d = new Date();
+document.getElementById("date").innerHTML = d.toDateString();
+</script>
