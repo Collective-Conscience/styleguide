@@ -151,11 +151,11 @@ h1, h2, h3, h4 {
     padding-left: 23%;
 }
 
-.dateTimePicker i, .dateTimePicker p, .dateTimePicker input  {
+.dateTimePicker i, .dateTimePicker p, .dateTimePicker input, .locationPicker i, .locationPicker p {
     display: inline;
 }
 
-.dateTimePicker i {
+.dateTimePicker i, .locationPicker i {
     margin-left: 0;
     vertical-align: middle;
 }
@@ -164,13 +164,28 @@ h1, h2, h3, h4 {
     font-family: Roboto;
     font-size: 1em;
     padding-left: 10px;
-    padding-right: 50px;
+    padding-right: 45px;
 }
 
 .dateTimePicker input {
     font-family: Roboto;
 }
 
+#cityState {
+    margin-left: 30px;
+}
+
+#locationChanger {
+    margin-left: 40px;
+}
+
+.locationPicker p {
+    padding-left: 10px;
+}
+
+#curTime {
+    margin-left: 15px;
+}
 
 /* ICONS */
 /* Rules for sizing the icon. */
